@@ -54,6 +54,7 @@ from app.models import (
     User,
     Workspace,
 )
+from app.pulse_tools import install_pulse_tools
 from app.scopes import has_scope, missing_scopes, normalize_scopes
 from app.security import hash_api_key
 from app.services.ingest import adapters as _ingest_adapters  # noqa: F401  — registers adapters
@@ -3169,6 +3170,10 @@ def _serialize(obj: Any) -> dict:
         else:
             out[col.name] = v
     return out
+
+
+# Extend this same authenticated transport with the local LAIROT workspace tools.
+install_pulse_tools(mcp, _principal_from_ctx, _require_scopes)
 
 
 def build_asgi_app():

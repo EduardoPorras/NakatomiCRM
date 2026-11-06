@@ -1,4 +1,10 @@
-# Nakatomi
+# LAIROT Maestro · Nakatomi fork
+
+Fork completo mantenido en [EduardoPorras/NakatomiCRM](https://github.com/EduardoPorras/NakatomiCRM). La rama `codex/lairot-maestro` integra el CRM nativo con la interfaz, trazabilidad y propuestas de LAIROT. Ver [arquitectura del fork](FORK.md) y [ejecución local](LOCAL.md). Se conserva el código original y su licencia MIT.
+
+---
+
+# Nakatomi — documentación original
 
 **The open-source CRM built for AI agents.**
 

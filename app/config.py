@@ -93,6 +93,12 @@ class Settings(BaseSettings):
     # Falls back to request Host headers when empty.
     PUBLIC_BASE_URL: str = ""
 
+    # Local LAIROT bridge. Disabled unless one explicit workspace is configured.
+    PULSE_API_URL: str = "http://host.docker.internal:4320"
+    PULSE_API_HOST: str = "127.0.0.1:4320"
+    PULSE_API_KEY_FILE: str = "/run/secrets/pulse-key"
+    PULSE_WORKSPACE_ID: str = ""
+
     # Optional OpenTelemetry (see app/otel.py, docs/OBSERVABILITY.md)
     OTEL_ENABLED: bool = False
     OTEL_SERVICE_NAME: str = "nakatomi"

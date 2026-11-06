@@ -17,3 +17,4 @@ dist/
 build/
 .claude/scheduled_tasks.lock
 .cursor/
+.local/
